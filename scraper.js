@@ -111,7 +111,7 @@ const { JSDOM } = jsdom;
             const statsHtml = await fetchPlayerStatsHtml(roninAddress,authtoken);
 
             // 3) extract stats
-            const statsJosn = await extractPlayerStats(statsHtml);
+            const statsJson = await extractPlayerStats(statsHtml);
 
             return statsJson;
        } catch (error) {
